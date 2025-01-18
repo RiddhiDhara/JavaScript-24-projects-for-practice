@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Custom Tabs</h1>
+    <div class="container">
+        <div class="button-wrapper">
+            <button data-id="home" class="tab-button active">Home</button>
+            <button data-id="services" class="tab-button">Services</button>
+            <button data-id="projects" class="tab-button">Projects</button>
+            <button data-id="portfolio" class="tab-button">Portfolio</button>
+            <button data-id="contact" class="tab-button">Contact</button>
+        </div>
+        <div class="content-wrapper">
+            <p id="home" class="content active">This is the <span
+                    style="color: blueviolet; text-decoration: underline;">HOME</span> Section</p>
+            <p id="services" class="content">This is the <span
+                    style="color: rgb(59, 167, 106); text-decoration: underline;">SERVICES</span> Section</p>
+            <p id="projects" class="content">This is the <span
+                    style="color: rgb(65, 55, 155); text-decoration: underline;">PROJECTS</span> Section</p>
+            <p id="portfolio" class="content">This is the <span
+                    style="color: rgb(143, 48, 81); text-decoration: underline;">PORTFOLIO</span> Section</p>
+            <p id="contact" class="content">This is the <span
+                    style="color: rgb(144, 164, 84); text-decoration: underline;">CONTACTS</span> Section</p>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
