@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+    background-color: rgb(31, 31, 31);
+}
+
+h1{
+    color: yellowgreen;
+}
+
+.filter-buttons-wrapper {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.filter-buttons-wrapper button {
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(213, 255, 189);
+    cursor: pointer;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content-wrapper .card {
+    width: 32%;
+    padding: 30px;
+    background-color: rgb(106, 142, 112);
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
