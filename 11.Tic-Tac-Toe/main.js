@@ -4,9 +4,12 @@ const message = document.querySelector(".message");
 const restartBtn = document.querySelector(".restart-button");
 const players = ["X", "O"];
 
-let currentPlayer = players[0];
+let s = 0;
+let alternator = () => s++ % players.length;
 
-message.textContent = `X's turn`;
+let currentPlayer = players[alternator()];
+
+message.textContent = `${currentPlayer}'s turn`;
 
 const winningPatterns = [
   [0, 1, 2],
@@ -78,13 +81,11 @@ function restartGame() {
     squares[i].textContent = "";
   }
 
-  message.textContent = `X's turn`;
+  message.textContent = `${currentPlayer}'s turn`;
   currentPlayer = players[0];
 }
 
 restartBtn.addEventListener("click", () => {
+  currentPlayer = players[alternator()];
   restartGame();
 });
-
-
-
