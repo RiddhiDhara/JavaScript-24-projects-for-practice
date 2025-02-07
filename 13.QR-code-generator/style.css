@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 25px;
+    text-align: center;
+    background-color: #151515;
+}
+
+h1{
+    font-size: 50px;
+    color: #ff8400;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.qr-text{
+    padding: 10px 20px;
+    width: 400px;
+    border: 5px solid rgb(88, 82, 78);
+    margin: 20px 0px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #181818;
+    color: rgb(211, 211, 211);
+}
+
+.generate-qr-code-btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 132, 0);
+    border: none;
+    cursor: pointer;
+    background-color: #2b2a2a;
+    border-radius: 10px;
+}
+
+.qr-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.error-message-text{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(221, 219, 217);
+    font-family: 'Courier New', Courier, monospace;
+}
